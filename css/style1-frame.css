@@ -264,7 +264,6 @@ footer{
         transition-duration: 1.5s;
         align-items: center; 
         margin-top: 10px; 
-        padding: 5px;
     }
     .link{
         padding: 1vh;
@@ -272,7 +271,7 @@ footer{
         margin-left: 0;
     }
     #navigation a{
-        font-size: 2vh;
+        font-size: 1.5vh;
     }
 
     #logo{
