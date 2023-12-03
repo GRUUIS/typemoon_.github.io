@@ -1,0 +1,45 @@
+#merry {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5% 0;
+    border-radius: 10px;
+}
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 1s ease-out;
+    position: relative;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    height: 600px; /* the fixed height; then adjust to fill the space 100% */
+    overflow: hidden;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#prevBtn, #nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}

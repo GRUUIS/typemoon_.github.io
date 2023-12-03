@@ -1,0 +1,88 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game Page</title>
+        <link rel="stylesheet" href="../css/style1-frame.css">
+        <link rel="stylesheet" href="../css/list.css">
+
+    </head>
+    <body>
+        <header>
+
+            <div id="navigation">
+                <img id="logo" src="../img/type_moon_logo.png">
+                <a href="../index.html" class="link" id="homepage">HOMEPAGE</a>
+                <a href="../html/game.html" class="link" id="game">GAME</a>
+                <a href="../html/anime.html" class="link" id="anime">ANIME</a>
+                <a href="../html/goods.html" class="link" id="goods">GOODS</a>
+                <!-- <div id="hamburger-icon">&#9776;</div> -->
+            </div>
+        </header>
+
+
+        <nav class="filter">
+            <ul>
+                <li><button class="filter-btn" data-filter="all">All</button></li>
+                <li><button class="filter-btn" data-filter="Fate">Fate</button></li>
+                <li><button class="filter-btn" data-filter="SOG">SOG</button></li>
+                <li><button class="filter-btn" data-filter="Tsuki">Tsuki</button></li>
+            </ul>
+        </nav>
+    
+        <div class="projects">
+            <!-- Project 1 -->
+            <div class="project" data-category="Fate">
+                <h2>Fate</h2>
+                <div class="gameAnime">
+                    <img src="../img/FSRLogo.webp" title="Fate/FSR" alt="Logo 1" class="fate FSR" tabindex="0">
+                    <img src="../img/FGO_logo.webp" title="Fate/GO" alt="Logo 2" class="fate GO" tabindex="0">
+                    <img src="../img/Fate_Extella_logo.webp" title="Fate/FE" alt="Logo 4" class="fate FE" tabindex="0">
+                </div>
+                <div>
+                    <p>Introduction for Fate/FSR...</p>
+                </div>
+                <div>
+                    <p>Introduction for Fate/GO...</p>
+                </div>
+                <div>
+                    <p>Introduction for Fate/FE...</p>
+                </div>
+            </div>
+    
+            <!-- Project 2 -->
+            <div class="project" data-category="Tsuki">
+                <h2>Tsukihime</h2>
+                <div class="gameAnime">
+                    <img src="../img/Melty_blood_logo.webp" title="Tsukihime.BLUEMOON" alt="Logo 1" class="tsuki BLUEMOON" tabindex="0">
+                    <img src="../img/Tsukihime_Title.JPG.webp" title="Tsukihime.BATTLE" alt="Logo 2" class="tsuki BATTLE" tabindex="0">
+                </div>
+                <div>
+                    <p>Introduction for Tsukihime.BLUEMOON...</p>
+                </div>
+                <div>
+                    <p>Introduction for Tsukihime.BATTLE...</p>
+                </div>
+            </div>
+    
+            <!-- Project 3 -->
+            <div class="project" data-category="SOG">
+                
+                <h2>The Garden of Sinners</h2>
+                <p>We didn't develop games for it yet. You can support us watching movie collections!</p>
+                <img src="../img/Kara_no_kyoukai_novel_cover_1.jpg" title="Shiki" alt="Kara no Kyoukai novel cover 3 with Shiki" tabindex="0">
+                
+            </div>
+        </div>
+
+
+        <button id="toTop">UP</button>
+
+        <script src="../javascript/toTop.js"></script>
+        <script src="../javascript/guide.js"></script>
+        <footer>
+            <p>&copy; 2023 Type-Moon. All Rights Reserved. | Created by FY</p>
+        </footer>
+    </body>
+    </html>

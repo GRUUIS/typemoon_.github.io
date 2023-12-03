@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5vh;
+}
+
+::selection{
+    color: #9e853f;
+}
+
+
+
+
+header {
+    background-color: #22519d;
+    padding: 3px; 
+    align-items: center;
+}
+
+
+
+#navigation{
+    margin-left: 10px;
+}
+
+#navigation, #logo{
+    display: flex;
+    justify-content:center;
+    flex-grow: 1;
+    padding: 0 10px;
+    flex-wrap: nowrap; 
+}
+
+#navigation a{
+    padding: 10px;
+}
+
+.link{
+    text-decoration: none;
+    color: rgb(244, 250, 255);
+    background-color: rgb(153, 176, 197);
+    padding: 2vh;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 1px -1px rgba(128, 128, 128, 0.401);
+    display: flex;
+    /*width: 90px;*/
+    text-align: center;
+    font-weight: bold;
+}
+
+.link:hover{
+    color: rgb(239, 210, 79);
+    transition: 0.5s;
+}
+
+ #logo{
+    border-radius: 50%;
+    max-width: 12vh; 
+    height: auto;
+    flex-grow: 1;
+    display:flex;
+}
+
+
+
+.container1 {
+    background-color: rgb(35, 35, 98);
+}
+
+.container2{
+    border: 3px solid lightgray;
+    padding: 30px 10px;
+    border-radius: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    /* flex: 1; */
+}
+
+.goods{
+  justify-content:space-evenly;
+}
+
+.goods div {
+  text-align: center;
+}
+
+.goods img {
+  width: 200px;
+  height: 200px;
+  
+  border-radius: 8px; /* Add rounded corners to the images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow to the images */
+}
+
+.goods p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.gameAnime{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap ;
+    cursor: pointer;
+}
+
+.gameAnime img{
+    width: 15%; 
+    height: auto;
+    margin: 10px 10px;
+}
+
+.animeContent{
+    display: none;
+    margin-top: 20px;
+}
+
+
+.word{
+    display: grid;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 10px;
+    width: 45%;
+    max-height: 50vh;
+    overflow: auto;
+}
+
+.word h2,h3{
+    margin: 20px 0;
+}
+
+.container2 iframe{
+    width: 40% ;
+    height: auto;
+}
+
+.floatimg{
+    width: 30%;
+    height: auto;
+    margin: 10px 10px;
+}
+
+
+#toTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    display: none;
+   
+    padding: 10px;
+    background-color: #22519d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toTop:hover{
+    background-color: #ccac53;
+    transition: 1s;
+}
+
+
+footer{
+    text-align: center;
+    background-color:#22519d;
+    color: aliceblue;
+}
+
+
+/* this css style for buttons is from online resources:
+ https://github.com/FE-Mars/bilibili-source/blob/master/source/Animation%20Buttons/style.css */
+/* 6 */
+.btn-6 {
+    background: rgb(169, 177, 233);
+  background: radial-gradient(circle, rgb(155, 194, 225) 0%, rgb(219, 196, 138)100%);
+    line-height: 42px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+  }
+  .btn-6 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-6:before,
+  .btn-6:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 1px;
+   box-shadow:
+     -1px -1px 20px 0px rgba(255,255,255,1),
+     -4px -4px 5px 0px rgba(255,255,255,1),
+     7px 7px 20px 0px rgba(0,0,0,.4),
+     4px 4px 5px 0px rgba(0,0,0,.3);
+  }
+  .btn-6:before {
+    right: 0;
+    top: 0;
+    transition: all 500ms ease;
+  }
+  .btn-6:after {
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+  }
+  .btn-6:hover{
+    background: transparent;
+    color: #76aef1;
+    box-shadow: none;
+  }
+  .btn-6:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  .btn-6:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  .btn-6 span:before,
+  .btn-6 span:after {
+    position: absolute;
+    content: "";
+    box-shadow:
+     -1px -1px 20px 0px rgba(255,255,255,1),
+     -4px -4px 5px 0px rgba(255,255,255,1),
+     7px 7px 20px 0px rgba(0,0,0,.4),
+     4px 4px 5px 0px rgba(0,0,0,.3);
+  }
+  .btn-6 span:before {
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: .5px;
+    transition: all 500ms ease;
+  }
+  .btn-6 span:after {
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: .5px;
+    transition: all 500ms ease;
+  }
+  .btn-6 span:hover:before {
+    width: 100%;
+  }
+  .btn-6 span:hover:after {
+    width: 100%;
+  }
+
+
+
+@media only screen and (max-width: 600px) {
+    #navigation{
+        transition-duration: 1.5s;
+        align-items: center; 
+        margin-top: 10px; 
+        padding: 5px;
+    }
+    .link{
+        padding: 1vh;
+        margin: 5px;
+        margin-left: 0;
+    }
+    #navigation a{
+        font-size: 2vh;
+    }
+
+    #logo{
+        max-width: 8vh; 
+        height: auto;
+    }
+
+    .goods {
+      flex-direction: column; 
+      text-align: center;
+  }
+
+    .goods img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .goods p{
+      margin-bottom: 10px;
+    }
+}

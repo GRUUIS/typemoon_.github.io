@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.filter {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.filter ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.filter li {
+    margin-right: 10px;
+}
+
+.filter-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.project {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project h2 {
+    color: #333;
+}
+
+.project img{
+    width: 100%;
+}
+.project img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.gameAnime img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.animeContent {
+    display: none;
+    margin-top: 10px;
+}
+
+.animeContent p {
+    color: #555;
+}
+
+.container1 {
+    text-align: center;
+}
+
+.container1 img {
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
