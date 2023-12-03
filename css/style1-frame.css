@@ -259,7 +259,7 @@ footer{
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 688px) {
     #navigation{
         transition-duration: 1.5s;
         align-items: center; 
