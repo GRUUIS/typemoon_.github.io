@@ -50,15 +50,12 @@ body {
     color: #333;
 }
 
-.project img{
-    width: 100%;
-}
 .project img:hover {
     transform: scale(1.1);
     transition: 1s;
 }
 
-.gameAnime img {
+.gameAnime img, .project img{
     width: 100%;
     cursor: pointer;
     border-radius: 5px;

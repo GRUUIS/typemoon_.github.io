@@ -100,22 +100,9 @@ header {
   font-weight: bold;
 }
 
-.gameAnime{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap:wrap ;
-    cursor: pointer;
-}
-
-.gameAnime img{
-    width: 15%; 
-    height: auto;
-    margin: 10px 10px;
-}
-
-.animeContent{
-    display: none;
-    margin-top: 20px;
+.goods img:hover{
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 
