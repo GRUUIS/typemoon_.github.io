@@ -282,3 +282,44 @@ footer{
       margin-bottom: 10px;
     }
 }
+
+
+@media only screen and (max-width: 321px) {
+  #navigation{
+      transition-duration: 1.5s;
+      align-items: center; 
+      margin-top: 5px; 
+      padding: 4px;
+  }
+  .link{
+      padding: 1vh;
+      margin: 3px;
+      margin-left: 0;
+  }
+  #navigation a, footer{
+      font-size: 1vh;
+  }
+
+  *{
+    overflow: auto;
+  }
+
+  #logo{
+      max-width: 5vh; 
+      height: auto;
+  }
+
+  .goods {
+    flex-direction: column; 
+    text-align: center;
+}
+
+  .goods img {
+      width: 80%; 
+      height: auto; 
+  }
+
+  .goods p{
+    margin-bottom: 5px;
+  }
+}
