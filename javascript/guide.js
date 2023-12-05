@@ -31,24 +31,32 @@ document.addEventListener('DOMContentLoaded', function () {
     const imgElements = document.querySelectorAll('.gameAnime img');
     const containerElements = document.querySelectorAll('.container2');
 
-    // Hide all container elements
-    containerElements.forEach(container => {
-        container.style.display = 'none';
-    });
-    
+    // display:none to hide the div
+    function hideAllContainers() {
+        containerElements.forEach(container => {
+            container.style.display = 'none';
+        });
+    }
+
+    hideAllContainers();
+
+    // add eventlistener for each image; index: in the querylist
     imgElements.forEach((img, index) => {
         img.addEventListener('click', function () {
-            // Toggle the display of the corresponding container
             if (containerElements[index].style.display === 'block') {
                 containerElements[index].style.display = 'none';
             } else {
-                // Hide all container elements
-                containerElements.forEach(container => {
-                    container.style.display = 'none';
-                });
-                // Show the corresponding container
+                hideAllContainers();
                 containerElements[index].style.display = 'block';
             }
         });
     });
+
+    //ChatGPT: to hide it again: listen to click on screen
+    document.addEventListener('click', function (event) {
+        if (!event.target.closest('.project') && !event.target.closest('.container2')) {
+            hideAllContainers();
+        }
+    });
 });
+
