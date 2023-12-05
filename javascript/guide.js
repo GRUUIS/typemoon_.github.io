@@ -1,9 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
     const filterButtons = document.querySelectorAll('.filter-btn');
+    //nodelist
     const projects = document.querySelectorAll('.project');
-    const animeContents = document.querySelectorAll('.animeContent');
 
     filterButtons.forEach(button => {
+        //In this code snippet, button is just a placeholder or variable name. It can be replaced with any valid variable name. 
+        //In the callback function of the forEach method, button represents the current iterated element, allowing you to reference the current button element.
         button.addEventListener('click', function () {
             const category = this.getAttribute('data-filter');
 
