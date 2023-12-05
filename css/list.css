@@ -67,6 +67,7 @@
 
 .intro {
     display: none;
+    transition: opacity 1.5s ease-in-out;
     position: fixed; /*remain on the middle*/
     top: 50%;
     left: 50%;
