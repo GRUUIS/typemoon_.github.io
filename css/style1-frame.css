@@ -92,7 +92,7 @@ header {
   width: 200px;
   height: 200px;
   
-  border-radius: 8px; /* Add rounded corners to the images */
+  border-radius: 10px; /* Add rounded corners to the images */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow to the images */
 }
 
@@ -102,8 +102,8 @@ header {
 }
 
 .goods img:hover{
-  transform: scale(1.1);
-  transition: 1s;
+  transform: scale(1.05);
+  transition: 1s ease-out;
 }
 
 
@@ -252,14 +252,14 @@ footer{
         transition-duration: 1.5s;
         align-items: center; 
         margin-top: 10px; 
-padding: 5px;
+        padding: 5px;
     }
     .link{
         padding: 1vh;
         margin: 5px;
         margin-left: 0;
     }
-    #navigation a{
+    #navigation a, footer{
         font-size: 1.5vh;
     }
 

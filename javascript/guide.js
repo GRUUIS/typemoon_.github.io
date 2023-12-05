@@ -25,3 +25,30 @@ document.addEventListener('DOMContentLoaded', function () {
         project.style.display = 'block';
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const imgElements = document.querySelectorAll('.gameAnime img');
+    const containerElements = document.querySelectorAll('.container2');
+
+    // Hide all container elements
+    containerElements.forEach(container => {
+        container.style.display = 'none';
+    });
+    
+    imgElements.forEach((img, index) => {
+        img.addEventListener('click', function () {
+            // Toggle the display of the corresponding container
+            if (containerElements[index].style.display === 'block') {
+                containerElements[index].style.display = 'none';
+            } else {
+                // Hide all container elements
+                containerElements.forEach(container => {
+                    container.style.display = 'none';
+                });
+                // Show the corresponding container
+                containerElements[index].style.display = 'block';
+            }
+        });
+    });
+});
