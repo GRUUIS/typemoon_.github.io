@@ -23,3 +23,16 @@ function scrollToTop() {
     document.documentElement.scrollTop = 0;
     //https://zhuanlan.zhihu.com/p/159566623
 }
+
+
+
+var logo = document.getElementById("logo");
+logo.addEventListener("click", function(){
+    var currentPath = window.location.pathname;
+
+        if (currentPath.endsWith("index.html")) {
+            window.location.href = "index.html";
+        } else {
+            window.location.href = "../index.html";
+        }
+})
