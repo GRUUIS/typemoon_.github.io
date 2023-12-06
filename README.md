@@ -9,3 +9,5 @@ SUS site ver2
 - [x] Basic web structure
 - [ ] Game for Tsukihime
 - [ ] Better UI
+- [ ] Contact 
+- [ ] Interactions in Goods page
