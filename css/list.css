@@ -24,6 +24,11 @@
     font-size: 16px;
 }
 
+.filter-btn:hover{
+    background-color: #555;
+    border-radius: 5px;
+}
+
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -56,15 +61,6 @@
     margin-top: 10px;
 }
 
-.animeContent {
-    display: none;
-    margin-top: 10px;
-}
-
-.animeContent p {
-    color: #555;
-}
-
 
 .intro {
     display: none;
@@ -85,6 +81,7 @@
 .intro p {
     margin-bottom: 10px;
     margin-top:10px;
+    color: #555;
 }
 
 .intro img{

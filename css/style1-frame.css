@@ -108,6 +108,11 @@ h2, p, h3, a{
   transition: 1s ease-out;
 }
 
+.goods a{
+  text-decoration: none;
+  color: rgb(57, 61, 66);
+}
+
 
 .word{
     display: grid;

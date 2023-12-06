@@ -7,7 +7,6 @@ SUS site ver2
 ## Features
 
 - [x] Basic web structure
-- [ ] Game for Tsukihime
 - [ ] Better UI
 - [ ] Contact 
 - [ ] Interactions in Goods page
