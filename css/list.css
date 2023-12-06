@@ -83,10 +83,24 @@
 
 .intro p {
     margin-bottom: 10px;
+    width: 65%;
+    height: auto;
 }
 
 .intro img{
-    max-width: 90%;
-    height: auto;
+    width: 35%;
+    height:auto;
     border-radius: 10px;
+    float: right;
 }
+
+@media only screen and (max-width: 688px) {
+    .intro p{
+        margin-bottom: 8px;
+        width: 100%;
+    }
+    .intro img{
+        width: 100%;
+    }
+}
+    

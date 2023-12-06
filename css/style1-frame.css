@@ -102,7 +102,7 @@ header {
 }
 
 .goods img:hover{
-  transform: scale(1.05);
+  transform: scale(1.1);
   transition: 1s ease-out;
 }
 
@@ -120,11 +120,6 @@ header {
 
 .word h2,h3{
     margin: 20px 0;
-}
-
-.container2 iframe{
-    width: 40% ;
-    height: auto;
 }
 
 .floatimg{
