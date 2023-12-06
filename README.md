@@ -8,5 +8,5 @@ SUS site ver2
 
 - [x] Basic web structure
 - [ ] Better UI
-- [ ] Contact 
-- [ ] Interactions in Goods page
+- [ ] Contact Page
+- [ ] Interactions in Goods pages
