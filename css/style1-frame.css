@@ -8,9 +8,6 @@
     color: #9e853f;
 }
 
-
-
-
 header {
     background-color: #22519d;
     padding: 3px; 
@@ -113,6 +110,20 @@ h2, p, h3, a{
   color: rgb(57, 61, 66);
 }
 
+.goodsDetail div{
+  display: flex;
+  flex-direction: column;
+  max-width: 55%;
+  padding: 10px 20px;
+  color: rgb(60, 72, 72);
+}
+
+.goodsDetail img{
+  max-width: 45%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
 .word{
     display: grid;
@@ -170,11 +181,12 @@ footer{
 /* 6 */
 .btn-6 {
     background: rgb(169, 177, 233);
-  background: radial-gradient(circle, rgb(155, 194, 225) 0%, rgb(219, 196, 138)100%);
+    background: radial-gradient(circle, rgb(155, 194, 225) 0%, rgb(219, 196, 138)100%);
     line-height: 42px;
     padding: 5px;
     border: none;
     border-radius: 10px;
+    text-decoration: none;
   }
   .btn-6 span {
     position: relative;
@@ -247,8 +259,6 @@ footer{
   .btn-6 span:hover:after {
     width: 100%;
   }
-
-
 
 @media only screen and (max-width: 688px) {
     #navigation{
