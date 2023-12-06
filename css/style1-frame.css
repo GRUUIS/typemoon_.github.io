@@ -17,7 +17,9 @@ header {
     align-items: center;
 }
 
-
+h2, p, h3, a{
+  padding: 10px;
+}
 
 #navigation{
     margin-left: 10px;
