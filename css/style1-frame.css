@@ -122,7 +122,6 @@ h2, p, h3, a{
   max-width: 45%;
   height: auto;
   border-radius: 10px;
-  overflow: hidden;
 }
 
 .word{
