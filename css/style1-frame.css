@@ -106,8 +106,7 @@ h2, p, h3{
 }
 
 a{
-  text-decoration: none;
-  color: rgb(57, 61, 66);
+  color: rgb(61, 101, 150);
   padding: 10px;
 }
 
@@ -345,5 +344,9 @@ footer{
 
   .goods p{
     margin-bottom: 5px;
+  }
+
+  .goodsDetail{
+    flex-direction: column;
   }
 }
