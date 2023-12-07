@@ -307,7 +307,7 @@ footer{
 }
 
 
-@media screen and (max-width: 268px) {
+@media screen and (max-width: 320px) {
   #navigation{
       transition-duration: 1.5s;
       align-items: center; 
