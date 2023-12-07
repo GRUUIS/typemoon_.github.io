@@ -1,0 +1,62 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact US</title>
+        <link rel="stylesheet" href="../css/style1-frame.css">
+    </head>
+    <body>
+        <main class="container">
+            <div>
+                <form action="../html/action_page.html" method="get">
+                
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="firstname" 
+                    placeholder="input your first name..." maxlength="50"
+                    required>
+                    <br>
+                
+                    <label for="lname" >Last name:</label>
+                    <input type="text" id="lname" name="lastname" 
+                    placeholder="input your last name..." maxlength="50"
+                    required>
+                    <br>
+                    <!--type=password: it is not visible for user now**
+                    maxlength-->
+                    
+                    <label for="word">Question:</label>
+                    <input type="text" id="word" name="word" placeholder="what you wanna say..." maxlength="200" required>
+                    <br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    
+                    <label for="phone">Phone No.</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <br>
+
+
+                    <label>Title:</label>
+                        <label for="Mr">Mr</label>
+                        <input type="checkbox" id="Mr." name="Mr." value="Mr.">
+
+                        <label for="Mrs">Mrs</label>
+                        <input type="checkbox" id="Mrs" name="Mrs" value="Mrs">       
+                    <br>
+            
+                    <br>
+                    <div class="buttons">
+                        <input type="reset">
+                    </div>
+
+                    <div class="buttons">
+                        <input type="submit">
+                    </div>
+                    
+                </form>
+            </div>   
+        </main>
+    </body>
+    </html>

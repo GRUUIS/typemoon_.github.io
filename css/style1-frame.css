@@ -14,7 +14,7 @@ header {
     align-items: center;
 }
 
-h2, p, h3, a{
+h2, p, h3{
   padding: 10px;
 }
 
@@ -105,9 +105,10 @@ h2, p, h3, a{
   transition: 1s ease-out;
 }
 
-.goods a{
+a{
   text-decoration: none;
   color: rgb(57, 61, 66);
+  padding: 10px;
 }
 
 .goodsDetail div{
@@ -122,6 +123,16 @@ h2, p, h3, a{
   max-width: 45%;
   height: auto;
   border-radius: 10px;
+}
+
+.buy{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.buy a{
+  border-radius: 10px;
+  color: aliceblue;
 }
 
 .word{
