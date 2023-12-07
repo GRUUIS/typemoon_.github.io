@@ -43,3 +43,15 @@
 #nextBtn {
     right: 10px;
 }
+
+@media screen and (max-width: 688px) {
+    .carousel-slide {
+        height: 400px; /* Adjust height for smaller screens */
+    }
+}
+
+@media screen and (max-width: 268px) {
+    .carousel-slide {
+        height: 150px; /* Further adjust height for even smaller screens */
+    }
+}

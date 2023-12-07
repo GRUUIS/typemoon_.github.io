@@ -188,6 +188,7 @@ footer{
 /* this css style for buttons is from online resources:
  https://github.com/FE-Mars/bilibili-source/blob/master/source/Animation%20Buttons/style.css */
 /* 6 */
+/*I combined this with my own button style as well*/
 .btn-6 {
     background: rgb(169, 177, 233);
     background: radial-gradient(circle, rgb(155, 194, 225) 0%, rgb(219, 196, 138)100%);
@@ -306,7 +307,7 @@ footer{
 }
 
 
-@media only screen and (max-width: 321px) {
+@media screen and (max-width: 268px) {
   #navigation{
       transition-duration: 1.5s;
       align-items: center; 
