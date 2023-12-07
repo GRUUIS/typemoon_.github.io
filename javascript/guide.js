@@ -28,17 +28,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// display:none to hide the div
-function hideAllContainers() {
-    containerElements.forEach(container => {
-        container.style.display = 'none';
-    });
-}
-
 document.addEventListener('DOMContentLoaded', function () {
     const imgElements = document.querySelectorAll('.gameAnime img');
     const containerElements = document.querySelectorAll('.container2');
 
+    // display:none to hide the div
+    function hideAllContainers() {
+        containerElements.forEach(container => {
+            container.style.display = 'none';
+        });
+    }
+    
     hideAllContainers();
 
     // add eventlistener for each image; index: in the querylist
