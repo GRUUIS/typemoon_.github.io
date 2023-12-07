@@ -13,7 +13,7 @@ iframes;
 
 - [x] Basic web structure
 - [ ] Better UI: 300px+; text div;
-- [ ] Contact Page [fake one]
+- [x] Contact Page [fake one]
 - [x] Interactions in Goods page: need to see more information
 - [x] erase iframes to enhance site's response speed
 - [x] Add social media link
