@@ -307,25 +307,21 @@ footer{
 }
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 588px) {
   #navigation{
       transition-duration: 1.5s;
       align-items: center; 
       margin-top: 5px; 
-      padding: 4px;
+      padding: 3px;
   }
   .link{
-      padding: 1vh;
+      padding: 20px;
       margin: 3px;
       margin-left: 0;
   }
   #navigation a, footer{
-      font-size: 1vh;
-      padding: 2px;
-  }
-
-  *{
-    overflow: auto;
+      font-size: 1.5vh;
+      padding: 4px;
   }
 
   #logo{
@@ -350,4 +346,11 @@ footer{
   .goodsDetail{
     flex-direction: column;
   }
+}
+
+@media screen and (max-width: 319px){
+  #navigation a, footer{
+    font-size: 1vh;
+    padding: 2px;
+}
 }
