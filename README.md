@@ -9,11 +9,13 @@ ver1:
 homepage:company&IP intro;
 game/anime page: filter with 3 IPs
 goods page:imgs with texts
+iframes
 
 - [x] Basic web structure
 - [ ] Better UI: 300px+; text div;
 - [-] Contact Page [fake one]
 - [x] Interactions in Goods page: need to see more information
+- [x] erase iframes to enhance site's response speed
 
 ## how to set up and run this project
 use VSCode/VisualStudio etc., clone this whole repository;
