@@ -38,7 +38,7 @@ h2, p, h3{
     text-decoration: none;
     color: rgb(244, 250, 255);
     background-color: rgb(153, 176, 197);
-    padding: 2vh;
+    padding: 1.5vh;
     margin: 10px;
     border-radius: 5px;
     box-shadow: 1px -1px rgba(128, 128, 128, 0.401);
@@ -122,7 +122,6 @@ a{
   max-width: 50%;
   height: auto;
   border-radius: 10px;
-  flex: 1;
 }
 
 .buy{
@@ -178,6 +177,9 @@ a{
     transition: 1s;
 }
 
+.media{
+  color: aliceblue;
+}
 
 footer{
     text-align: center;

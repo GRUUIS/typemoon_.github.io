@@ -16,6 +16,7 @@ iframes;
 - [ ] Contact Page [fake one]
 - [x] Interactions in Goods page: need to see more information
 - [x] erase iframes to enhance site's response speed
+- [x] Add social media link
 
 ## how to set up and run this project
 use VSCode/VisualStudio etc., clone this whole repository;
