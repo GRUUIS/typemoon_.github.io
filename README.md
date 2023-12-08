@@ -12,7 +12,7 @@ goods page:imgs with texts;
 iframes;
 
 - [x] Basic web structure
-- [ ] Better UI: 300px+; text div;
+- [ ] Better UI: 300px+; text div; title img;
 - [x] Contact Page [fake one]
 - [x] Interactions in Goods page: need to see more information
 - [x] erase iframes to enhance site's response speed
