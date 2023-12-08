@@ -152,6 +152,11 @@ a{
     margin-left: 15px;
 }
 
+label, input{
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+
 
 #toTop {
     position: fixed;
