@@ -57,12 +57,18 @@ document.getElementById('nextBtn').addEventListener('click', () => {
 });
 
 // Event listeners for touch events to enable swipe navigation
-slidesContainer.addEventListener('touchstart', (e) => {
+slidesContainer.addEventListener('touchstart', handleTouchStart);
+slidesContainer.addEventListener('touchmove', handleTouchMove);
+slidesContainer.addEventListener('touchend', handleTouchEnd);
+
+// Touch start event handler
+function handleTouchStart(e) {
     touchStartX = e.touches[0].clientX;
     isTouching = true;
-});
+}
 
-slidesContainer.addEventListener('touchmove', (e) => {
+// Touch move event handler
+function handleTouchMove(e) {
     if (!isTouching) return;
 
     const touchMoveX = e.touches[0].clientX;
@@ -71,9 +77,12 @@ slidesContainer.addEventListener('touchmove', (e) => {
 
     slidesContainer.style.transition = 'none';
     slidesContainer.style.transform = `translateX(-${currentSlide * 100 + percentageDeltaX}%)`;
-});
 
-slidesContainer.addEventListener('touchend', (e) => {
+    e.preventDefault(); // Prevent default touchmove behavior to improve responsiveness
+}
+
+// Touch end event handler
+function handleTouchEnd(e) {
     if (!isTouching) return;
 
     const touchEndX = e.changedTouches[0].clientX;
@@ -88,4 +97,4 @@ slidesContainer.addEventListener('touchend', (e) => {
     }
 
     isTouching = false;
-});
+}
