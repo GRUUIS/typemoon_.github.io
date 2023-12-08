@@ -75,11 +75,6 @@ slidesContainer.addEventListener('touchend', (e) => {
     isTouching = false;
 });
 
-// Optional: Add touch cancel event listener
-slidesContainer.addEventListener('touchcancel', () => {
-    isTouching = false;
-});
-
 // Optional: Add touch move event listener for additional interactions
 // slidesContainer.addEventListener('touchmove', (e) => {
 //     // Handle touch move if needed
