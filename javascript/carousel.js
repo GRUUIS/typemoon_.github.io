@@ -1,37 +1,40 @@
 /*asked ChatGPT; this code gets elements in that carousel container, then 
 change its style's transform in X-axis*/
 // Initialize variables
-let currentSlide = 0; // Current index of the visible slide
-const slidesContainer = document.querySelector('.carousel-slides'); // Container for all carousel slides
-const totalSlides = document.querySelectorAll('.carousel-slide').length; // Total number of slides
-const transitionDuration = 2500; // Duration of slide transition animation in milliseconds
-const autoPlayInterval = 10000; // Interval for auto-playing slides in milliseconds
+let currentSlide = 0; 
+const slidesContainer = document.querySelector('.carousel-slides'); 
+const totalSlides = document.querySelectorAll('.carousel-slide').length; 
+const transitionDuration = 1500; 
+const autoPlayInterval = 8000; 
+
+// Variable to store initial touch position
+let touchStartX = 0;
 
 // Function to show a specific slide based on its index
 function showSlide(index) {
-    const offset = -index * 100 + '%'; // Calculate the horizontal offset based on the index
-    slidesContainer.style.transition = `transform ${transitionDuration / 1000}s ease-out`; // Set transition properties
-    slidesContainer.style.transform = `translateX(${offset})`; // Apply the transform to show the desired slide
+    const offset = -index * 100 + '%'; 
+    slidesContainer.style.transition = `transform ${transitionDuration / 1000}s ease-out`; 
+    slidesContainer.style.transform = `translateX(${offset})`; 
 }
 
 // Function to move to the next slide
 function nextSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides; // Calculate the index of the next slide
-    showSlide(currentSlide); // Display the next slide
+    currentSlide = (currentSlide + 1) % totalSlides; 
+    showSlide(currentSlide); 
 }
 
 // Function to move to the previous slide
 function prevSlide() {
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides; // Calculate the index of the previous slide
-    showSlide(currentSlide); // Display the previous slide
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides; 
+    showSlide(currentSlide); 
 }
 
 // Function for auto-playing slides
 function autoPlay() {
-    nextSlide(); // Move to the next slide
+    nextSlide(); 
 }
 
-// Set up an interval for auto-playing slides；10s
+// Set up an interval for auto-playing slides；8s
 let autoPlayTimer = setInterval(autoPlay, autoPlayInterval);
 
 // Function to restart auto-play after manual slide navigation
@@ -41,9 +44,9 @@ function startAutoPlay() {
 
 // Event listeners for previous and next button clicks
 document.getElementById('prevBtn').addEventListener('click', () => {
-    prevSlide(); // Move to the previous slide
-    clearInterval(autoPlayTimer); // Clear the auto-play interval
-    startAutoPlay(); // Restart auto-play
+    prevSlide(); 
+    clearInterval(autoPlayTimer); 
+    startAutoPlay(); 
 });
 
 document.getElementById('nextBtn').addEventListener('click', () => {
@@ -52,3 +55,20 @@ document.getElementById('nextBtn').addEventListener('click', () => {
     startAutoPlay(); 
 });
 
+// Event listeners for touch events to enable swipe navigation
+slidesContainer.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+});
+
+slidesContainer.addEventListener('touchend', (e) => {
+    const touchEndX = e.changedTouches[0].clientX;
+    const deltaX = touchEndX - touchStartX;
+
+    // Set a threshold for the swipe distance to prevent accidental swipes
+    if (Math.abs(deltaX) > 50) {
+        // If positive, swipe right; if negative, swipe left
+        deltaX > 0 ? prevSlide() : nextSlide();
+        clearInterval(autoPlayTimer);
+        startAutoPlay();
+    }
+});
