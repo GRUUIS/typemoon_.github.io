@@ -62,7 +62,20 @@ slidesContainer.addEventListener('touchstart', (e) => {
     isTouching = true;
 });
 
+slidesContainer.addEventListener('touchmove', (e) => {
+    if (!isTouching) return;
+
+    const touchMoveX = e.touches[0].clientX;
+    const deltaX = touchMoveX - touchStartX;
+    const percentageDeltaX = (deltaX / window.innerWidth) * 100;
+
+    slidesContainer.style.transition = 'none';
+    slidesContainer.style.transform = `translateX(-${currentSlide * 100 + percentageDeltaX}%)`;
+});
+
 slidesContainer.addEventListener('touchend', (e) => {
+    if (!isTouching) return;
+
     const touchEndX = e.changedTouches[0].clientX;
     const deltaX = touchEndX - touchStartX;
 
@@ -70,12 +83,9 @@ slidesContainer.addEventListener('touchend', (e) => {
         deltaX > 0 ? prevSlide() : nextSlide();
         clearInterval(autoPlayTimer);
         startAutoPlay();
+    } else {
+        showSlide(currentSlide); // Reset to current slide if the movement is less than the threshold
     }
 
     isTouching = false;
 });
-
-// Optional: Add touch move event listener for additional interactions
-// slidesContainer.addEventListener('touchmove', (e) => {
-//     // Handle touch move if needed
-// });
