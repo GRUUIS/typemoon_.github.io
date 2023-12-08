@@ -87,7 +87,7 @@ h2, p, h3{
   text-align: center;
 }
 
-.goods img {
+.goods img, .goodsDetail img{
   width: 200px;
   height: 200px;
   
@@ -116,13 +116,9 @@ a{
   max-width: 55%;
   padding: 10px 20px;
   color: rgb(60, 72, 72);
+  margin-left: 2vh;
 }
 
-.goodsDetail img{
-  max-width: 50%;
-  height: auto;
-  border-radius: 10px;
-}
 
 .buy{
   margin-left: 10px;
