@@ -7,6 +7,7 @@ const totalSlides = document.querySelectorAll('.carousel-slide').length;
 const transitionDuration = 1500;
 const autoPlayInterval = 8000;
 let touchStartX = 0;
+let touchStartY = 0;
 let isTouching = false; // Flag to track touch interaction
 
 // Function to show a specific slide based on its index
@@ -64,6 +65,7 @@ slidesContainer.addEventListener('touchend', handleTouchEnd);
 // Touch start event handler
 function handleTouchStart(e) {
     touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
     isTouching = true;
 }
 
@@ -72,13 +74,22 @@ function handleTouchMove(e) {
     if (!isTouching) return;
 
     const touchMoveX = e.touches[0].clientX;
+    const touchMoveY = e.touches[0].clientY;
     const deltaX = touchMoveX - touchStartX;
-    const percentageDeltaX = (deltaX / window.innerWidth) * 100;
+    const deltaY = touchMoveY - touchStartY;
 
-    slidesContainer.style.transition = 'none';
-    slidesContainer.style.transform = `translateX(-${currentSlide * 100 + percentageDeltaX}%)`;
+    // Calculate the angle of the swipe
+    const angle = Math.atan2(Math.abs(deltaY), Math.abs(deltaX)) * (180 / Math.PI);
 
-    e.preventDefault(); // Prevent default touchmove behavior to improve responsiveness
+    // If the angle is less than 45 degrees, consider it a horizontal swipe
+    if (angle < 45) {
+        const percentageDeltaX = (deltaX / window.innerWidth) * 100;
+
+        slidesContainer.style.transition = 'none';
+        slidesContainer.style.transform = `translateX(-${currentSlide * 100 + percentageDeltaX}%)`;
+
+        e.preventDefault(); // Prevent default touchmove behavior to improve responsiveness
+    }
 }
 
 // Touch end event handler
