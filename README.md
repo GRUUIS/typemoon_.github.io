@@ -25,7 +25,7 @@ use VSCode/VisualStudio etc., clone this whole repository;
 ## credits for third-party resources used:
 https://zhuanlan.zhihu.com/p/159566623: scroll to the top of the document/page;
 ChatGPT: tutorials on how to make a carousel, and filter function; to click somewhere other than the current div to hide info block again in Game page & Anime page;
-https://github.com/FE-Mars/bilibili-source/blob/master/source/Animation%20Buttons/style.css: button's CSS style on github; was combined with other transition/background-color code to polish UI;
+https://github.com/FE-Mars/bilibili-source/blob/master/source/Animation%20Buttons/style.css: button's CSS style on github; was combined with other transition/background-color code to polish UI;https://www.youtube.com/watch?v=7HPsdVQhpRw :by Coding Nepal:draggable image slider;
 
 ## license information
 Github/TypeMoon/FY;

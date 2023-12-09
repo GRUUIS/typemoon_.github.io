@@ -46,6 +46,6 @@
 
 @media screen and (max-width: 320px) {
     .carousel-slide {
-        height: 300px; /* Adjust height for smaller screens */
+        height: 280px; /* Adjust height for smaller screens */
     }
 }
