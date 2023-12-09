@@ -1,4 +1,6 @@
-/*asked ChatGPT; this code gets elements in that carousel container, then 
+/*asked ChatGPT; 
+And Youtube tutorial credited in readMe.md
+this code gets elements in that carousel container, then 
 change its style's transform in X-axis*/
 // Initialize variables
 let currentSlide = 0;

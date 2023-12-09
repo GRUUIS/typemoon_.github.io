@@ -18,7 +18,7 @@ iframes;
 - [x] erase iframes to enhance site's response speed
 - [x] Add social media link
 - [x] alt; title;
-- [x] Draggable carousel;
+- [ ] Draggable carousel;
 - [x] debug "toTop" function;
 
 ## how to set up and run this project
