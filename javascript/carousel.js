@@ -57,6 +57,7 @@ document.getElementById('nextBtn').addEventListener('click', () => {
     startAutoPlay();
 });
 
+//https://www.youtube.com/watch?v=7HPsdVQhpRw
 // Event listeners for touch events to enable swipe navigation
 slidesContainer.addEventListener('touchstart', handleTouchStart);
 slidesContainer.addEventListener('touchmove', handleTouchMove);
