@@ -111,7 +111,7 @@ function handleTouchEnd(e) {
 }
 
 // Additional code for carousel with mouse drag interaction
-const carousel = document.querySelector(".carousel"),
+const carousel = document.querySelector(".carousel-slides"),
     firstImg = carousel.querySelectorAll("img")[0],
     arrowIcons = document.querySelectorAll(".wrapper i");
 
