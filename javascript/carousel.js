@@ -72,8 +72,6 @@ function handleTouchStart(e) {
 
 // Touch move event handler
 function handleTouchMove(e) {
-    if (!isTouching) return;
-
     const touchMoveX = e.touches[0].clientX;
     const touchMoveY = e.touches[0].clientY;
     const deltaX = touchMoveX - touchStartX;
@@ -100,7 +98,7 @@ function handleTouchEnd(e) {
     const touchEndX = e.changedTouches[0].clientX;
     const deltaX = touchEndX - touchStartX;
 
-    if (Math.abs(deltaX) > 50) {
+    if (Math.abs(deltaX) > 40) {
         deltaX > 0 ? prevSlide() : nextSlide();
         clearInterval(autoPlayTimer);
         startAutoPlay();
