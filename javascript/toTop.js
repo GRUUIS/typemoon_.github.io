@@ -10,4 +10,13 @@ window.onscroll = function() {
     }
 };
 
+//logo back to homepage
+document.getElementById('logo').addEventListener('click', function() {
+    var currentPath = window.location.pathname;
 
+    if (currentPath.endsWith("index.html")) {
+        window.location.href = "index.html";
+    } else {
+        window.location.href = "../index.html";
+    }
+});
